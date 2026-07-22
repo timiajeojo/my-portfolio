@@ -1,5 +1,11 @@
 ---
 import "../styles/global.css";
+
+interface Props {
+  title?: string;
+}
+
+const { title = "Timi Ajeojo | Full Stack Developer" } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -7,9 +13,11 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Timi Ajeojo</title>
+    <meta name="description" content="Full Stack Developer Portfolio" />
+    <title>{title}</title>
   </head>
-  <body>
+
+  <body class="bg-zinc-950 text-white antialiased">
     <slot />
   </body>
 </html>
