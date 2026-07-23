@@ -31,4 +31,20 @@ export const portfolio = {
 
   availability: "Freelance"
 },
+work: [
+  {
+    company: "Freelance",
+    role: "Full Stack Developer",
+    period: "2024 - Present",
+    description:
+      "Building modern web applications for clients using React, Next.js, Astro, Tailwind CSS, Supabase and Firebase."
+  },
+  {
+    company: "Personal Projects",
+    role: "Frontend & Backend Development",
+    period: "2023 - Present",
+    description:
+      "Designed and developed portfolio websites, SaaS products and full-stack applications while continuously improving software engineering skills."
+  }
+],
 };
