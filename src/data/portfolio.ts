@@ -1,28 +1,21 @@
 export const portfolio = {
   name: "Timi Ajeojo",
 
-  title: "Full Stack Developer",
+  role: "Full Stack Developer",
 
-  location: "Lagos, Nigeria",
+  availability: "Available for Freelance",
 
-  available: true,
+  headline: "Building digital experiences that people enjoy.",
 
-  hero: {
-    heading: "Building digital experiences that people enjoy.",
+  description:
+    "I build modern, scalable and high-performance web applications with a focus on exceptional user experience.",
 
-    description:
-      "I'm a Full Stack Developer passionate about crafting fast, scalable and user-focused web applications with modern technologies."
-  },
+  resume: "/resume.pdf",
 
   socials: {
     github: "https://github.com/timiajeojo",
-
     linkedin: "",
-
     twitter: "",
-
-    email: "you@example.com"
-  },
-
-  resume: "/resume.pdf"
+    email: ""
+  }
 };
