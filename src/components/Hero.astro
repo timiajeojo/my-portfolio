@@ -2,29 +2,26 @@
 import { portfolio } from "../data/portfolio";
 ---
 
-<section
-  class="relative overflow-hidden pt-32 pb-20"
->
+<section class="relative overflow-hidden pt-28">
 
   <!-- Background Glow -->
   <div
-    class="absolute left-1/2 top-32 h-80 w-80 -translate-x-1/2 rounded-full bg-indigo-500/10 blur-[120px]"
+    class="absolute left-1/2 top-24 h-80 w-80 -translate-x-1/2 rounded-full bg-indigo-500/10 blur-[120px]"
   ></div>
 
   <div
-    class="relative mx-auto flex min-h-[80vh] w-full max-w-7xl flex-col justify-center px-6 lg:px-12"
+    class="relative mx-auto flex w-full max-w-7xl flex-col justify-center px-6 py-20 lg:px-8"
   >
 
     <span
       class="mb-8 inline-flex w-fit items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-400"
     >
       <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-
       {portfolio.availability}
     </span>
 
     <h1
-      class="max-w-5xl text-5xl font-black leading-tight tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
+      class="max-w-5xl text-5xl font-black leading-tight tracking-tight sm:text-6xl md:text-7xl xl:text-8xl"
     >
       {portfolio.headline}
     </h1>
@@ -35,9 +32,7 @@ import { portfolio } from "../data/portfolio";
       {portfolio.description}
     </p>
 
-    <div
-      class="mt-12 flex flex-wrap items-center gap-4"
-    >
+    <div class="mt-12 flex flex-wrap gap-4">
       <a
         href="#projects"
         class="rounded-xl bg-white px-6 py-3 font-semibold text-black transition hover:scale-105"
