@@ -1,0 +1,70 @@
+---
+import { portfolio } from "../data/portfolio";
+---
+
+<section
+  id="about"
+  class="mx-auto max-w-7xl px-6 py-32"
+>
+
+  <p
+    class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-zinc-500"
+  >
+    About
+  </p>
+
+  <h2
+    class="max-w-4xl text-4xl font-bold leading-tight md:text-5xl"
+  >
+    {portfolio.about.intro}
+  </h2>
+
+  <p
+    class="mt-8 max-w-3xl text-lg leading-8 text-zinc-400"
+  >
+    {portfolio.about.description}
+  </p>
+
+  <div
+    class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+  >
+
+    <div
+      class="rounded-2xl border border-zinc-800 p-6"
+    >
+      <p class="text-sm uppercase tracking-widest text-zinc-500">
+        Location
+      </p>
+
+      <h3 class="mt-3 text-xl font-semibold">
+        {portfolio.about.location}
+      </h3>
+    </div>
+
+    <div
+      class="rounded-2xl border border-zinc-800 p-6"
+    >
+      <p class="text-sm uppercase tracking-widest text-zinc-500">
+        Experience
+      </p>
+
+      <h3 class="mt-3 text-xl font-semibold">
+        {portfolio.about.experience}
+      </h3>
+    </div>
+
+    <div
+      class="rounded-2xl border border-zinc-800 p-6"
+    >
+      <p class="text-sm uppercase tracking-widest text-zinc-500">
+        Availability
+      </p>
+
+      <h3 class="mt-3 text-xl font-semibold">
+        {portfolio.about.availability}
+      </h3>
+    </div>
+
+  </div>
+
+</section>
