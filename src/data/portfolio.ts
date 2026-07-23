@@ -47,4 +47,35 @@ work: [
       "Designed and developed portfolio websites, SaaS products and full-stack applications while continuously improving software engineering skills."
   }
 ],
+stack: {
+  frontend: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Astro",
+    "Tailwind CSS"
+  ],
+
+  backend: [
+    "Node.js",
+    "Express",
+    "Firebase",
+    "Supabase"
+  ],
+
+  database: [
+    "MongoDB",
+    "PostgreSQL"
+  ],
+
+  tools: [
+    "Git",
+    "GitHub",
+    "Vercel",
+    "Figma"
+  ]
+},
 };

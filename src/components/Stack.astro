@@ -1,0 +1,79 @@
+---
+import { portfolio } from "../data/portfolio";
+
+const categories = [
+  {
+    title: "Frontend",
+    items: portfolio.stack.frontend
+  },
+  {
+    title: "Backend",
+    items: portfolio.stack.backend
+  },
+  {
+    title: "Database",
+    items: portfolio.stack.database
+  },
+  {
+    title: "Tools",
+    items: portfolio.stack.tools
+  }
+];
+---
+
+<section
+  id="stack"
+  class="container-custom py-24"
+>
+
+  <p class="section-title">
+    Stack
+  </p>
+
+  <h2
+    class="mb-16 text-4xl font-bold md:text-5xl"
+  >
+    Technologies I use
+  </h2>
+
+  <div
+    class="grid gap-8 md:grid-cols-2"
+  >
+
+    {
+      categories.map((category) => (
+
+        <div class="card">
+
+          <h3
+            class="mb-6 text-xl font-semibold"
+          >
+            {category.title}
+          </h3>
+
+          <div
+            class="flex flex-wrap gap-3"
+          >
+
+            {
+              category.items.map((tech) => (
+
+                <span
+                  class="rounded-full border border-zinc-700 px-4 py-2 text-sm transition hover:border-white hover:bg-zinc-800"
+                >
+                  {tech}
+                </span>
+
+              ))
+            }
+
+          </div>
+
+        </div>
+
+      ))
+    }
+
+  </div>
+
+</section>
