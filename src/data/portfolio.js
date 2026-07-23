@@ -66,6 +66,7 @@ exports.portfolio = {
     projects: [
         {
             title: "CareSync",
+            image: "/images/projects/caresync.png",
             description: "A healthcare management platform for patients and healthcare providers with appointment scheduling and patient management.",
             technologies: [
                 "Next.js",
@@ -73,11 +74,12 @@ exports.portfolio = {
                 "Tailwind CSS",
                 "Firebase"
             ],
-            github: "https://github.com/timiajeojo",
+            github: "https://github.com/timiajeojo/caresync",
             live: "#"
         },
         {
             title: "Chat with PDF",
+            image: "/images/projects/chat-with-pdf.png",
             description: "An AI-powered application that allows users to upload PDFs and chat with their documents in real time.",
             technologies: [
                 "React",
@@ -85,18 +87,19 @@ exports.portfolio = {
                 "OpenAI",
                 "Tailwind CSS"
             ],
-            github: "https://github.com/timiajeojo",
+            github: "https://github.com/timiajeojo/chat-with-pdf",
             live: "#"
         },
         {
             title: "Segment",
+            image: "/images/projects/segment.png",
             description: "A platform for discovering and sharing books while creating reading communities.",
             technologies: [
                 "Next.js",
                 "PostgreSQL",
                 "Tailwind CSS"
             ],
-            github: "https://github.com/timiajeojo",
+            github: "https://github.com/timiajeojo/segment",
             live: "#"
         }
     ],

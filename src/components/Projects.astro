@@ -6,7 +6,6 @@ import { portfolio } from "../data/portfolio";
   id="projects"
   class="container-custom py-24"
 >
-
   <p class="section-title">
     Projects
   </p>
@@ -16,47 +15,39 @@ import { portfolio } from "../data/portfolio";
   </h2>
 
   <div class="space-y-10">
-
     {
       portfolio.projects.map((project) => (
-
         <article
-          class="group overflow-hidden rounded-3xl border border-zinc-800 transition hover:border-zinc-600"
+          class="group overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/30 transition-all duration-300 hover:border-zinc-600"
         >
-
           <div class="grid lg:grid-cols-2">
 
-            <!-- Thumbnail -->
-            <div
-              class="flex min-h-[260px] items-center justify-center bg-zinc-900"
-            >
-              <span class="text-zinc-600">
-                Project Preview
-              </span>
+            <!-- Project Image -->
+            <div class="overflow-hidden bg-zinc-900">
+              <img
+                src={project.image}
+                alt={project.title}
+                loading="lazy"
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              />
             </div>
 
-            <!-- Content -->
-            <div class="p-8 lg:p-10">
+            <!-- Project Content -->
+            <div class="flex flex-col justify-center p-8 lg:p-10">
 
-              <h3
-                class="text-3xl font-bold"
-              >
+              <h3 class="text-3xl font-bold">
                 {project.title}
               </h3>
 
-              <p
-                class="mt-6 leading-8 text-zinc-400"
-              >
+              <p class="mt-6 leading-8 text-zinc-400">
                 {project.description}
               </p>
 
-              <div
-                class="mt-8 flex flex-wrap gap-3"
-              >
+              <div class="mt-8 flex flex-wrap gap-3">
                 {
                   project.technologies.map((tech) => (
                     <span
-                      class="rounded-full border border-zinc-700 px-4 py-2 text-sm"
+                      class="rounded-full border border-zinc-700 px-4 py-2 text-sm text-zinc-300 transition hover:border-white hover:bg-zinc-800"
                     >
                       {tech}
                     </span>
@@ -64,12 +55,11 @@ import { portfolio } from "../data/portfolio";
                 }
               </div>
 
-              <div
-                class="mt-10 flex gap-4"
-              >
-
+              <div class="mt-10 flex flex-wrap gap-4">
                 <a
                   href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   class="btn-primary"
                 >
                   Live Demo
@@ -77,22 +67,19 @@ import { portfolio } from "../data/portfolio";
 
                 <a
                   href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   class="btn-secondary"
                 >
                   GitHub
                 </a>
-
               </div>
 
             </div>
 
           </div>
-
         </article>
-
       ))
     }
-
   </div>
-
 </section>
