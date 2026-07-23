@@ -78,4 +78,55 @@ stack: {
     "Figma"
   ]
 },
+projects: [
+  {
+    title: "CareSync",
+    description:
+      "A healthcare management platform for patients and healthcare providers with appointment scheduling and patient management.",
+
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase"
+    ],
+
+    github: "https://github.com/timiajeojo",
+
+    live: "#"
+  },
+
+  {
+    title: "Chat with PDF",
+    description:
+      "An AI-powered application that allows users to upload PDFs and chat with their documents in real time.",
+
+    technologies: [
+      "React",
+      "Supabase",
+      "OpenAI",
+      "Tailwind CSS"
+    ],
+
+    github: "https://github.com/timiajeojo",
+
+    live: "#"
+  },
+
+  {
+    title: "Segment",
+    description:
+      "A platform for discovering and sharing books while creating reading communities.",
+
+    technologies: [
+      "Next.js",
+      "PostgreSQL",
+      "Tailwind CSS"
+    ],
+
+    github: "https://github.com/timiajeojo",
+
+    live: "#"
+  }
+],
 };

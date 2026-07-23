@@ -1,0 +1,98 @@
+---
+import { portfolio } from "../data/portfolio";
+---
+
+<section
+  id="projects"
+  class="container-custom py-24"
+>
+
+  <p class="section-title">
+    Projects
+  </p>
+
+  <h2 class="mb-16 text-4xl font-bold md:text-5xl">
+    Featured Projects
+  </h2>
+
+  <div class="space-y-10">
+
+    {
+      portfolio.projects.map((project) => (
+
+        <article
+          class="group overflow-hidden rounded-3xl border border-zinc-800 transition hover:border-zinc-600"
+        >
+
+          <div class="grid lg:grid-cols-2">
+
+            <!-- Thumbnail -->
+            <div
+              class="flex min-h-[260px] items-center justify-center bg-zinc-900"
+            >
+              <span class="text-zinc-600">
+                Project Preview
+              </span>
+            </div>
+
+            <!-- Content -->
+            <div class="p-8 lg:p-10">
+
+              <h3
+                class="text-3xl font-bold"
+              >
+                {project.title}
+              </h3>
+
+              <p
+                class="mt-6 leading-8 text-zinc-400"
+              >
+                {project.description}
+              </p>
+
+              <div
+                class="mt-8 flex flex-wrap gap-3"
+              >
+                {
+                  project.technologies.map((tech) => (
+                    <span
+                      class="rounded-full border border-zinc-700 px-4 py-2 text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))
+                }
+              </div>
+
+              <div
+                class="mt-10 flex gap-4"
+              >
+
+                <a
+                  href={project.live}
+                  class="btn-primary"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href={project.github}
+                  class="btn-secondary"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      ))
+    }
+
+  </div>
+
+</section>
