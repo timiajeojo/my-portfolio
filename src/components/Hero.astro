@@ -2,48 +2,75 @@
 import { portfolio } from "../data/portfolio";
 ---
 
-<section class="relative overflow-hidden pt-28">
+<section id="home" class="relative overflow-hidden">
 
   <!-- Background Glow -->
   <div
-    class="absolute left-1/2 top-20 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-indigo-500/10 blur-[180px]"
+    class="absolute left-1/2 top-24 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-violet-500/10 blur-[180px]"
   ></div>
 
-  <div class="container-custom relative py-24">
+  <div class="container-custom relative flex min-h-[85vh] flex-col justify-center">
 
-    <span
-      class="inline-flex items-center gap-3 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-400"
-    >
-      <span class="relative flex h-3 w-3">
+    <!-- Availability -->
 
-        <span
-          class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"
-        ></span>
+    <div class="reveal">
 
-        <span
-          class="relative inline-flex h-3 w-3 rounded-full bg-emerald-400"
-        ></span>
+      <span
+        class="inline-flex items-center gap-3 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-400"
+      >
+
+        <span class="h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
+
+        {portfolio.availability}
 
       </span>
 
-      {portfolio.availability}
-    </span>
+    </div>
 
-    <h1
-      class="mt-8 max-w-5xl text-5xl font-black leading-[1.05] tracking-tight sm:text-6xl md:text-7xl xl:text-8xl"
-    >
-      {portfolio.hero.heading}
-    </h1>
+    <!-- Greeting -->
 
     <p
-      class="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 md:text-xl"
+      class="reveal mt-10 text-lg text-zinc-400"
+      style="transition-delay:100ms"
+    >
+      Hi, I'm
+    </p>
+
+    <!-- Name -->
+
+    <h1
+      class="reveal mt-3 text-6xl font-black tracking-tight sm:text-7xl lg:text-8xl"
+      style="transition-delay:200ms"
+    >
+      {portfolio.name}
+    </h1>
+
+    <!-- Role -->
+
+    <h2
+      id="typed-role"
+      class="reveal mt-6 text-2xl font-semibold text-zinc-300 md:text-4xl"
+      style="transition-delay:300ms"
+    >
+      {portfolio.role}
+    </h2>
+
+    <!-- Description -->
+
+    <p
+      class="reveal mt-8 max-w-2xl text-lg leading-8 text-zinc-400"
+      style="transition-delay:400ms"
     >
       {portfolio.hero.description}
     </p>
 
+    <!-- Buttons -->
+
     <div
-      class="mt-12 flex flex-wrap gap-4"
+      class="reveal mt-12 flex flex-wrap gap-4"
+      style="transition-delay:500ms"
     >
+
       <a
         href="#projects"
         class="btn-primary"
@@ -57,31 +84,71 @@ import { portfolio } from "../data/portfolio";
       >
         Contact Me
       </a>
+
+      <a
+        href={portfolio.resume}
+        download
+        class="btn-secondary"
+      >
+        Download Résumé
+      </a>
+
     </div>
 
-    <a
-      href={portfolio.resume}
-      download
-      class="group mt-10 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.3em]"
+    <!-- Socials -->
+
+    <div
+      class="reveal mt-14 flex flex-wrap gap-8 text-zinc-500"
+      style="transition-delay:600ms"
     >
-      <span class="border-b border-zinc-600 group-hover:border-white">
-        Résumé
-      </span>
 
-      <span class="transition group-hover:translate-x-1 group-hover:-translate-y-1">
-        ↗
-      </span>
-    </a>
+      <a
+        href={portfolio.socials.github}
+        target="_blank"
+        class="transition hover:text-white"
+      >
+        GitHub
+      </a>
 
-    <div class="mt-20">
+      {
+        portfolio.socials.linkedin && (
+          <a
+            href={portfolio.socials.linkedin}
+            target="_blank"
+            class="transition hover:text-white"
+          >
+            LinkedIn
+          </a>
+        )
+      }
+
+      <a
+        href={`mailto:${portfolio.contact.email}`}
+        class="transition hover:text-white"
+      >
+        Email
+      </a>
+
+    </div>
+
+    <!-- Scroll -->
+
+    <div
+      class="reveal mt-20"
+      style="transition-delay:700ms"
+    >
+
       <a
         href="#about"
-        class="inline-flex items-center gap-3 text-sm text-zinc-500 transition hover:text-white"
+        class="inline-flex items-center gap-3 text-sm uppercase tracking-[0.3em] text-zinc-500 transition hover:text-white"
       >
-        <span class="animate-bounce text-lg">↓</span>
 
-        Scroll to explore
+        ↓
+
+        Scroll to Explore
+
       </a>
+
     </div>
 
   </div>
