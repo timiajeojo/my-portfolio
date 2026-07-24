@@ -103,4 +103,12 @@ exports.portfolio = {
             live: "#"
         }
     ],
+    contact: {
+        heading: "Let's build something great together.",
+        description: "Whether you have a project, an opportunity, or just want to say hello, I'd love to hear from you.",
+        email: "your@email.com",
+        github: "https://github.com/timiajeojo",
+        linkedin: "",
+        twitter: ""
+    },
 };

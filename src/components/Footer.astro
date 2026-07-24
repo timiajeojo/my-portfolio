@@ -1,0 +1,19 @@
+---
+import { portfolio } from "../data/portfolio";
+---
+
+<footer class="border-t border-zinc-800">
+  <div
+    class="container-custom flex flex-col items-center justify-between gap-4 py-8 text-sm text-zinc-500 md:flex-row"
+  >
+
+    <p>
+      © {new Date().getFullYear()} {portfolio.name}. All rights reserved.
+    </p>
+
+    <p>
+      Built with Astro & Tailwind CSS
+    </p>
+
+  </div>
+</footer>

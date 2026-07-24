@@ -1,0 +1,75 @@
+---
+import { portfolio } from "../data/portfolio";
+---
+
+<section
+  id="contact"
+  class="container-custom py-24"
+>
+
+  <div class="card text-center">
+
+    <p class="section-title">
+      Contact
+    </p>
+
+    <h2
+      class="mx-auto max-w-3xl text-4xl font-bold md:text-5xl"
+    >
+      {portfolio.contact.heading}
+    </h2>
+
+    <p
+      class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400"
+    >
+      {portfolio.contact.description}
+    </p>
+
+    <a
+      href={`mailto:${portfolio.contact.email}`}
+      class="btn-primary mt-10 inline-flex"
+    >
+      Say Hello
+    </a>
+
+    <div
+      class="mt-10 flex flex-wrap justify-center gap-8 text-zinc-400"
+    >
+
+      <a
+        href={portfolio.contact.github}
+        target="_blank"
+        class="hover:text-white"
+      >
+        GitHub
+      </a>
+
+      {
+        portfolio.contact.linkedin && (
+          <a
+            href={portfolio.contact.linkedin}
+            target="_blank"
+            class="hover:text-white"
+          >
+            LinkedIn
+          </a>
+        )
+      }
+
+      {
+        portfolio.contact.twitter && (
+          <a
+            href={portfolio.contact.twitter}
+            target="_blank"
+            class="hover:text-white"
+          >
+            X
+          </a>
+        )
+      }
+
+    </div>
+
+  </div>
+
+</section>
