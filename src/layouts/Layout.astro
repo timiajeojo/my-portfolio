@@ -1,23 +1,46 @@
 ---
 import "../styles/global.css";
+import "../styles/hero.css";
+
+import "../scripts/hero";
 
 interface Props {
   title?: string;
 }
 
-const { title = "Timi Ajeojo | Full Stack Developer" } = Astro.props;
+const {
+  title = "Timi Ajeojo | Full Stack Developer"
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Full Stack Developer Portfolio" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <meta
+      name="description"
+      content="Portfolio of Timi Ajeojo, a Full Stack Developer building modern, scalable and high-performance web applications."
+    />
+
+    <meta
+      name="theme-color"
+      content="#09090b"
+    />
+
     <title>{title}</title>
   </head>
 
-  <body class="bg-zinc-950 text-white antialiased">
+  <body
+    class="bg-zinc-950 text-white antialiased selection:bg-indigo-500 selection:text-white"
+  >
+
     <slot />
+
   </body>
 </html>
