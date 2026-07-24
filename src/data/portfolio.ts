@@ -5,11 +5,12 @@ export const portfolio = {
 
   availability: "Available for Freelance",
 
-  headline: "Building digital experiences that people enjoy.",
+  hero: {
+  heading: "Building digital experiences that inspire.",
 
   description:
-    "I build modern, scalable and high-performance web applications with a focus on exceptional user experience.",
-
+    "I'm Timi Ajeojo, a Full Stack Developer passionate about crafting fast, scalable and beautiful web applications with modern technologies."
+     },
   resume: "/resume.pdf",
 
   socials: {

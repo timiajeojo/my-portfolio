@@ -5,8 +5,10 @@ exports.portfolio = {
     name: "Timi Ajeojo",
     role: "Full Stack Developer",
     availability: "Available for Freelance",
-    headline: "Building digital experiences that people enjoy.",
-    description: "I build modern, scalable and high-performance web applications with a focus on exceptional user experience.",
+    hero: {
+        heading: "Building digital experiences that inspire.",
+        description: "I'm Timi Ajeojo, a Full Stack Developer passionate about crafting fast, scalable and beautiful web applications with modern technologies."
+    },
     resume: "/resume.pdf",
     socials: {
         github: "https://github.com/timiajeojo",

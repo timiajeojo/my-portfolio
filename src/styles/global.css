@@ -26,14 +26,13 @@ body {
     @apply mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-zinc-500;
   }
 
-  .btn-primary {
-    @apply rounded-xl bg-white px-6 py-3 font-semibold text-black transition duration-300 hover:scale-105;
-  }
+ .btn-primary {
+  @apply rounded-xl bg-white px-6 py-3 font-semibold text-black transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+}
 
-  .btn-secondary {
-    @apply rounded-xl border border-zinc-700 px-6 py-3 transition duration-300 hover:border-white;
-  }
-
+.btn-secondary {
+  @apply rounded-xl border border-zinc-700 px-6 py-3 transition-all duration-300 hover:-translate-y-1 hover:border-white;
+}
   .card {
     @apply rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6;
   }
