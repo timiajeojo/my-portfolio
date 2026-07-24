@@ -2,155 +2,193 @@
 import { portfolio } from "../data/portfolio";
 ---
 
-<section id="home" class="relative overflow-hidden">
+<section
+  id="home"
+  class="hero relative isolate overflow-hidden"
+>
 
-  <!-- Background Glow -->
-  <div
-    class="absolute left-1/2 top-24 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-violet-500/10 blur-[180px]"
-  ></div>
+  <!-- Animated Grid -->
+  <div class="hero-grid"></div>
 
-  <div class="container-custom relative flex min-h-[85vh] flex-col justify-center">
+  <!-- Noise Overlay -->
+  <div class="hero-noise"></div>
 
-    <!-- Availability -->
+  <!-- Mouse Glow -->
+  <div id="hero-glow" class="hero-glow"></div>
 
-    <div class="reveal">
+  <!-- Gradient Orbs -->
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
 
-      <span
-        class="inline-flex items-center gap-3 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-400"
+  <div class="container-custom relative z-10 flex min-h-screen items-center py-32">
+
+    <div class="max-w-5xl">
+
+      <!-- Availability -->
+
+      <div
+        class="hero-item"
+        data-delay="0"
+      >
+        <span class="availability-badge">
+
+          <span class="availability-dot"></span>
+
+          {portfolio.availability}
+
+        </span>
+      </div>
+
+      <!-- Greeting -->
+
+      <p
+        class="hero-item mt-12 text-lg font-medium text-zinc-400"
+        data-delay="100"
+      >
+        Hello, I'm
+      </p>
+
+      <!-- Name -->
+
+      <h1
+        class="hero-item mt-4 text-6xl font-black tracking-tight sm:text-7xl lg:text-8xl xl:text-9xl"
+        data-delay="200"
+      >
+        <span class="hero-name">
+          {portfolio.name}
+        </span>
+      </h1>
+
+      <!-- Role -->
+
+      <div
+        class="hero-item mt-8 flex min-h-[48px] items-center"
+        data-delay="300"
       >
 
-        <span class="h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
+        <span
+          id="typed-role"
+          class="text-2xl font-semibold text-zinc-300 md:text-4xl"
+        >
+          {portfolio.role}
+        </span>
 
-        {portfolio.availability}
+      </div>
 
-      </span>
+      <!-- Description -->
 
-    </div>
-
-    <!-- Greeting -->
-
-    <p
-      class="reveal mt-10 text-lg text-zinc-400"
-      style="transition-delay:100ms"
-    >
-      Hi, I'm
-    </p>
-
-    <!-- Name -->
-
-    <h1
-      class="reveal mt-3 text-6xl font-black tracking-tight sm:text-7xl lg:text-8xl"
-      style="transition-delay:200ms"
-    >
-      {portfolio.name}
-    </h1>
-
-    <!-- Role -->
-
-    <h2
-      id="typed-role"
-      class="reveal mt-6 text-2xl font-semibold text-zinc-300 md:text-4xl"
-      style="transition-delay:300ms"
-    >
-      {portfolio.role}
-    </h2>
-
-    <!-- Description -->
-
-    <p
-      class="reveal mt-8 max-w-2xl text-lg leading-8 text-zinc-400"
-      style="transition-delay:400ms"
-    >
-      {portfolio.hero.description}
-    </p>
-
-    <!-- Buttons -->
-
-    <div
-      class="reveal mt-12 flex flex-wrap gap-4"
-      style="transition-delay:500ms"
-    >
-
-      <a
-        href="#projects"
-        class="btn-primary"
+      <p
+        class="hero-item mt-10 max-w-2xl text-lg leading-9 text-zinc-400 md:text-xl"
+        data-delay="400"
       >
-        View Projects
-      </a>
+        {portfolio.hero.description}
+      </p>
 
-      <a
-        href="#contact"
-        class="btn-secondary"
-      >
-        Contact Me
-      </a>
+      <!-- CTA Buttons -->
 
-      <a
-        href={portfolio.resume}
-        download
-        class="btn-secondary"
-      >
-        Download Résumé
-      </a>
-
-    </div>
-
-    <!-- Socials -->
-
-    <div
-      class="reveal mt-14 flex flex-wrap gap-8 text-zinc-500"
-      style="transition-delay:600ms"
-    >
-
-      <a
-        href={portfolio.socials.github}
-        target="_blank"
-        class="transition hover:text-white"
-      >
-        GitHub
-      </a>
-
-      {
-        portfolio.socials.linkedin && (
-          <a
-            href={portfolio.socials.linkedin}
-            target="_blank"
-            class="transition hover:text-white"
-          >
-            LinkedIn
-          </a>
-        )
-      }
-
-      <a
-        href={`mailto:${portfolio.contact.email}`}
-        class="transition hover:text-white"
-      >
-        Email
-      </a>
-
-    </div>
-
-    <!-- Scroll -->
-
-    <div
-      class="reveal mt-20"
-      style="transition-delay:700ms"
-    >
-
-      <a
-        href="#about"
-        class="inline-flex items-center gap-3 text-sm uppercase tracking-[0.3em] text-zinc-500 transition hover:text-white"
+      <div
+        class="hero-item mt-14 flex flex-wrap gap-4"
+        data-delay="500"
       >
 
-        ↓
+        <a
+          href="#projects"
+          class="btn-primary magnetic"
+        >
+          View Projects
+        </a>
 
-        Scroll to Explore
+        <a
+          href="#contact"
+          class="btn-secondary magnetic"
+        >
+          Contact Me
+        </a>
 
-      </a>
+        <a
+          href={portfolio.resume}
+          download
+          class="btn-secondary magnetic"
+        >
+          Download Résumé
+        </a>
+
+      </div>
+
+      <!-- Social Links -->
+
+      <div
+        class="hero-item mt-16 flex flex-wrap items-center gap-8"
+        data-delay="600"
+      >
+
+        <a
+          href={portfolio.socials.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-link"
+        >
+          GitHub
+        </a>
+
+        {
+          portfolio.socials.linkedin && (
+            <a
+              href={portfolio.socials.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hero-link"
+            >
+              LinkedIn
+            </a>
+          )
+        }
+
+        {
+          portfolio.socials.twitter && (
+            <a
+              href={portfolio.socials.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hero-link"
+            >
+              X
+            </a>
+          )
+        }
+
+        <a
+          href={`mailto:${portfolio.contact.email}`}
+          class="hero-link"
+        >
+          Email
+        </a>
+
+      </div>
 
     </div>
 
   </div>
+
+  <!-- Scroll Indicator -->
+
+  <a
+    href="#about"
+    class="hero-scroll hero-item"
+    data-delay="700"
+    aria-label="Scroll to About section"
+  >
+
+    <span class="mouse">
+
+      <span class="wheel"></span>
+
+    </span>
+
+    <span>
+      Scroll
+    </span>
+
+  </a>
 
 </section>
