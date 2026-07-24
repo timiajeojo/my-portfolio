@@ -2,8 +2,6 @@
 import "../styles/global.css";
 import "../styles/hero.css";
 
-import "../scripts/hero";
-
 interface Props {
   title?: string;
 }
@@ -25,12 +23,7 @@ const {
 
     <meta
       name="description"
-      content="Portfolio of Timi Ajeojo, a Full Stack Developer building modern, scalable and high-performance web applications."
-    />
-
-    <meta
-      name="theme-color"
-      content="#09090b"
+      content="Portfolio of Timi Ajeojo, a Full Stack Developer building modern web applications."
     />
 
     <title>{title}</title>
@@ -41,6 +34,10 @@ const {
   >
 
     <slot />
+
+    <script type="module">
+      import "../scripts/main";
+    </script>
 
   </body>
 </html>
