@@ -203,3 +203,57 @@ opacity:0;
 
 }
 }
+/* ==========================================================
+   Site Background
+   ========================================================== */
+
+.site-background {
+  position: relative;
+  background: #09090b;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.site-background::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+.site-background::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    radial-gradient(circle at top center,
+      rgba(99,102,241,.12),
+      transparent 60%),
+    radial-gradient(circle at bottom left,
+      rgba(20,184,166,.08),
+      transparent 55%);
+}
+/* ==========================================================
+   Reveal Animation
+   ========================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity .6s ease,
+    transform .6s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
