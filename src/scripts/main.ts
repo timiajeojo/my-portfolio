@@ -43,16 +43,18 @@ function initReveal() {
 
   if (!elements.length) return;
 
+  // Stagger elements that belong to the same parent
+  elements.forEach((element, index) => {
+    element.style.transitionDelay = `${index * 80}ms`;
+  });
+
   const observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
 
-        const target = entry.target as HTMLElement;
-
-        target.classList.add("show");
-
-        observer.unobserve(target);
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
       });
     },
     {
@@ -105,6 +107,7 @@ function initScrollIndicator() {
 =========================================== */
 
 function init() {
+  initHeroEntrance();
   initTyped();
   initReveal();
   initSkillCards();

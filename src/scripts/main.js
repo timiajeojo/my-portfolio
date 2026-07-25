@@ -35,13 +35,16 @@ function initReveal() {
     var elements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale");
     if (!elements.length)
         return;
+    // Stagger elements that belong to the same parent
+    elements.forEach(function (element, index) {
+        element.style.transitionDelay = "".concat(index * 80, "ms");
+    });
     var observer = new IntersectionObserver(function (entries, observer) {
         entries.forEach(function (entry) {
             if (!entry.isIntersecting)
                 return;
-            var target = entry.target;
-            target.classList.add("show");
-            observer.unobserve(target);
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
         });
     }, {
         threshold: 0.12,
@@ -78,6 +81,7 @@ function initScrollIndicator() {
    Initialize
 =========================================== */
 function init() {
+    initHeroEntrance();
     initTyped();
     initReveal();
     initSkillCards();
