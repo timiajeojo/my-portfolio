@@ -1,0 +1,88 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var typed_js_1 = require("typed.js");
+var typed = null;
+/* ===========================================
+   Typewriter
+=========================================== */
+function initTyped() {
+    var element = document.querySelector("#typed-role");
+    if (!element)
+        return;
+    if (typed) {
+        typed.destroy();
+    }
+    typed = new typed_js_1.default("#typed-role", {
+        strings: [
+            "Full Stack Developer",
+            "Frontend Developer",
+            "Backend Developer",
+            "Problem Solver",
+        ],
+        typeSpeed: 60,
+        backSpeed: 35,
+        backDelay: 1800,
+        smartBackspace: true,
+        loop: true,
+        showCursor: true,
+        cursorChar: "|",
+    });
+}
+/* ===========================================
+   Reveal Animation
+=========================================== */
+function initReveal() {
+    var elements = document.querySelectorAll(".reveal");
+    if (!elements.length)
+        return;
+    var observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting)
+                return;
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: "0px 0px -80px 0px",
+    });
+    elements.forEach(function (element) { return observer.observe(element); });
+}
+/* ===========================================
+   Scroll Indicator
+=========================================== */
+function initScrollIndicator() {
+    var indicator = document.querySelector(".hero-scroll");
+    if (!indicator)
+        return;
+    var update = function () {
+        var opacity = Math.max(0, 1 - window.scrollY / 250);
+        indicator.style.opacity = opacity.toString();
+    };
+    update();
+    window.addEventListener("scroll", update, {
+        passive: true,
+    });
+}
+/* ===========================================
+   Initialize
+=========================================== */
+function init() {
+    initTyped();
+    initReveal();
+    initScrollIndicator();
+}
+document.addEventListener("DOMContentLoaded", init);
+// Re-run after Astro view transitions
+document.addEventListener("astro:page-load", init);
+/* ===========================================
+   Cleanup
+=========================================== */
+if (import.meta.hot) {
+    import.meta.hot.dispose(function () {
+        if (typed) {
+            typed.destroy();
+            typed = null;
+        }
+    });
+}

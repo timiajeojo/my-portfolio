@@ -7,7 +7,7 @@ interface Props {
 }
 
 const {
-  title = "Timi Ajeojo | Full Stack Developer"
+  title = "Timi Ajeojo | Full Stack Developer",
 } = Astro.props;
 ---
 
@@ -26,12 +26,19 @@ const {
       content="Portfolio of Timi Ajeojo, a Full Stack Developer building modern web applications."
     />
 
+    <meta
+      name="theme-color"
+      content="#09090b"
+    />
+
     <title>{title}</title>
   </head>
 
-  <body
-  class="site-background bg-zinc-950 text-white antialiased selection:bg-indigo-500 selection:text-white"
->
-  <slot />
-</body>
+  <body class="site-background bg-zinc-950 text-white antialiased selection:bg-indigo-500 selection:text-white">
+    <slot />
+
+    <script type="module">
+      import "../scripts/main.ts";
+    </script>
+  </body>
 </html>
