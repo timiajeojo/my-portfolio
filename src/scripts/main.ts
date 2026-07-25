@@ -37,7 +37,9 @@ function initTyped() {
 =========================================== */
 
 function initReveal() {
-  const elements = document.querySelectorAll<HTMLElement>(".reveal");
+  const elements = document.querySelectorAll<HTMLElement>(
+  ".reveal, .hero-item"
+);
 
   if (!elements.length) return;
 

@@ -32,7 +32,7 @@ function initTyped() {
    Reveal Animation
 =========================================== */
 function initReveal() {
-    var elements = document.querySelectorAll(".reveal");
+    var elements = document.querySelectorAll(".reveal, .hero-item");
     if (!elements.length)
         return;
     var observer = new IntersectionObserver(function (entries, observer) {
