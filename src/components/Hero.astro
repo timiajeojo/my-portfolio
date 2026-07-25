@@ -4,94 +4,170 @@ import { portfolio } from "../data/portfolio";
 
 <section
   id="home"
-  class="hero relative isolate overflow-hidden pt-32 pb-20"
+  class="hero relative isolate overflow-hidden"
 >
 
-  <div
-    class="mx-auto flex min-h-[80vh] w-full max-w-7xl flex-col justify-center px-6 lg:px-12"
-  >
+  <div class="container-custom relative z-10 flex min-h-screen items-center py-32">
 
-    <!-- Availability -->
-    <span
-      class="availability-badge reveal-scale mb-8 inline-flex w-fit items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-400"
-    >
-      <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+    <div class="max-w-5xl">
 
-      {portfolio.availability}
-    </span>
+      <!-- Availability -->
 
-    <!-- Heading -->
-    <h1
-      class="reveal-left max-w-5xl text-5xl font-black leading-tight tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
-    >
-      Hi, I'm <span class="text-white">{portfolio.name}</span>
-
-      <br />
-
-      <span
-        id="typed-role"
-        class="bg-gradient-to-r from-indigo-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent"
-      ></span>
-    </h1>
-
-    <!-- Description -->
-    <p
-      class="reveal-right mt-8 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg md:text-xl"
-    >
-      {portfolio.description}
-    </p>
-
-    <!-- Buttons -->
-    <div
-      class="reveal mt-12 flex flex-wrap items-center gap-4"
-    >
-
-      <a
-        href="#projects"
-        class="btn-primary rounded-xl bg-white px-6 py-3 font-semibold text-black transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+      <div
+        class="reveal-scale"
       >
-        View Projects
-      </a>
+        <span class="availability-badge">
 
-      <a
-        href="#contact"
-        class="btn-secondary rounded-xl border border-zinc-700 px-6 py-3 transition duration-300 hover:-translate-y-1 hover:border-white"
+          <span class="availability-dot"></span>
+
+          {portfolio.availability}
+
+        </span>
+      </div>
+
+      <!-- Greeting -->
+
+      <p
+        class="reveal-left mt-12 text-lg font-medium text-zinc-400"
       >
-        Contact Me
-      </a>
+        Hello, I'm
+      </p>
+
+      <!-- Name -->
+
+      <h1
+        class="reveal-left mt-4 text-6xl font-black tracking-tight sm:text-7xl lg:text-8xl xl:text-9xl"
+      >
+        <span class="hero-name">
+          {portfolio.name}
+        </span>
+      </h1>
+
+      <!-- Role -->
+
+      <div
+        class="reveal-right mt-8 flex min-h-[48px] items-center"
+      >
+
+        <span
+          id="typed-role"
+          class="text-2xl font-semibold text-zinc-300 md:text-4xl"
+        >
+          {portfolio.role}
+        </span>
+
+      </div>
+
+      <!-- Description -->
+
+      <p
+        class="reveal mt-10 max-w-2xl text-lg leading-9 text-zinc-400 md:text-xl"
+      >
+        {portfolio.hero.description}
+      </p>
+
+      <!-- CTA Buttons -->
+
+      <div
+        class="reveal mt-14 flex flex-wrap gap-4"
+      >
+
+        <a
+          href="#projects"
+          class="btn-primary magnetic"
+        >
+          View Projects
+        </a>
+
+        <a
+          href="#contact"
+          class="btn-secondary magnetic"
+        >
+          Contact Me
+        </a>
+
+        <a
+          href={portfolio.resume}
+          download
+          class="btn-secondary magnetic"
+        >
+          Download Résumé
+        </a>
+
+      </div>
+
+      <!-- Social Links -->
+
+      <div
+        class="reveal mt-16 flex flex-wrap items-center gap-8"
+      >
+
+        <a
+          href={portfolio.socials.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-link"
+        >
+          GitHub
+        </a>
+
+        {
+          portfolio.socials.linkedin && (
+            <a
+              href={portfolio.socials.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hero-link"
+            >
+              LinkedIn
+            </a>
+          )
+        }
+
+        {
+          portfolio.socials.twitter && (
+            <a
+              href={portfolio.socials.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hero-link"
+            >
+              X
+            </a>
+          )
+        }
+
+        <a
+          href={`mailto:${portfolio.contact.email}`}
+          class="hero-link"
+        >
+          Email
+        </a>
+
+      </div>
 
     </div>
-
-    <!-- Resume -->
-    <a
-      href={portfolio.resume}
-      download
-      class="reveal group mt-10 inline-flex w-fit items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em]"
-    >
-      <span
-        class="border-b border-zinc-600 transition group-hover:border-white"
-      >
-        Download Résumé
-      </span>
-
-      ↗
-    </a>
 
   </div>
 
   <!-- Scroll Indicator -->
+
   <a
     href="#about"
     class="hero-scroll reveal-scale"
     aria-label="Scroll to About section"
   >
-    <div class="mouse">
-      <div class="wheel"></div>
-    </div>
 
-    <span class="text-xs uppercase tracking-[0.3em]">
+    <span class="mouse">
+
+      <span class="wheel"></span>
+
+    </span>
+
+    <span>
       Scroll
     </span>
+
   </a>
 
 </section>
