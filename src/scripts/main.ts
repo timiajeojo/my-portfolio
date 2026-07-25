@@ -33,13 +33,13 @@ function initTyped() {
 }
 
 /* ===========================================
-   Reveal Animation
+   Scroll Reveal Animations
 =========================================== */
 
 function initReveal() {
   const elements = document.querySelectorAll<HTMLElement>(
-  ".reveal, .hero-item"
-);
+    ".reveal, .reveal-left, .reveal-right, .reveal-scale"
+  );
 
   if (!elements.length) return;
 
@@ -48,17 +48,33 @@ function initReveal() {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
 
-        entry.target.classList.add("show");
-        observer.unobserve(entry.target);
+        const target = entry.target as HTMLElement;
+
+        target.classList.add("show");
+
+        observer.unobserve(target);
       });
     },
     {
-      threshold: 0.15,
+      threshold: 0.12,
       rootMargin: "0px 0px -80px 0px",
     }
   );
 
   elements.forEach((element) => observer.observe(element));
+}
+
+/* ===========================================
+   Skill Card Stagger
+=========================================== */
+
+function initSkillCards() {
+  const cards =
+    document.querySelectorAll<HTMLElement>(".skill-card");
+
+  cards.forEach((card, index) => {
+    card.style.transitionDelay = `${index * 80}ms`;
+  });
 }
 
 /* ===========================================
@@ -91,6 +107,7 @@ function initScrollIndicator() {
 function init() {
   initTyped();
   initReveal();
+  initSkillCards();
   initScrollIndicator();
 }
 

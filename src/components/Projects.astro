@@ -15,11 +15,13 @@ import { portfolio } from "../data/portfolio";
   </h2>
 
   <div class="space-y-10">
-    {
-      portfolio.projects.map((project) => (
+{
+  portfolio.projects.map((project, index) => (
         <article
-          class="group overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/30 transition-all duration-300 hover:border-zinc-600"
-        >
+  class={`group ${
+    index % 2 === 0 ? "reveal-left" : "reveal-right"
+  } overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/30 transition-all duration-300 hover:border-zinc-600`}
+>
           <div class="grid lg:grid-cols-2">
 
             <!-- Project Image -->

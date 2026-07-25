@@ -257,3 +257,118 @@ opacity:0;
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ==========================================================
+   Animation System
+========================================================== */
+
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+
+  opacity: 0;
+
+  transition:
+      opacity .7s ease,
+      transform .7s ease;
+
+  will-change: transform, opacity;
+
+}
+
+.show {
+
+  opacity: 1;
+
+}
+
+/* ----------------------------------------- */
+/* Fade Up */
+/* ----------------------------------------- */
+
+.reveal {
+
+  transform: translateY(30px);
+
+}
+
+.reveal.show {
+
+  transform: translateY(0);
+
+}
+
+/* ----------------------------------------- */
+/* Left */
+/* ----------------------------------------- */
+
+.reveal-left {
+
+  transform: translateX(-50px);
+
+}
+
+.reveal-left.show {
+
+  transform: translateX(0);
+
+}
+
+/* ----------------------------------------- */
+/* Right */
+/* ----------------------------------------- */
+
+.reveal-right {
+
+  transform: translateX(50px);
+
+}
+
+.reveal-right.show {
+
+  transform: translateX(0);
+
+}
+
+/* ----------------------------------------- */
+/* Scale */
+/* ----------------------------------------- */
+
+.reveal-scale {
+
+  transform: scale(.92);
+
+}
+
+.reveal-scale.show {
+
+  transform: scale(1);
+
+}
+
+/* ==========================================================
+   Skill Cards
+========================================================== */
+
+.skill-card {
+
+  transition:
+      transform .25s ease,
+      border-color .25s ease,
+      box-shadow .25s ease;
+
+}
+
+.skill-card:hover {
+
+  transform:
+      translateY(-6px);
+
+  border-color:
+      rgb(99 102 241);
+
+  box-shadow:
+      0 10px 30px rgba(99,102,241,.15);
+
+}
