@@ -107,7 +107,6 @@ function initScrollIndicator() {
 =========================================== */
 
 function init() {
-  initHeroEntrance();
   initTyped();
   initReveal();
   initSkillCards();
