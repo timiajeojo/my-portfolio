@@ -39,16 +39,16 @@ function initReveal() {
     elements.forEach(function (element, index) {
         element.style.transitionDelay = "".concat(index * 80, "ms");
     });
-    var observer = new IntersectionObserver(function (entries, observer) {
+    var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
-            if (!entry.isIntersecting)
-                return;
-            entry.target.classList.add("show");
-            observer.unobserve(entry.target);
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
         });
     }, {
-        threshold: 0.12,
-        rootMargin: "0px 0px -80px 0px",
+        rootMargin: "0px 0px -120px 0px",
+        threshold: 0.05,
     });
     elements.forEach(function (element) { return observer.observe(element); });
 }

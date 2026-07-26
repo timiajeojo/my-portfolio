@@ -49,19 +49,19 @@ function initReveal() {
   });
 
   const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
         entry.target.classList.add("show");
         observer.unobserve(entry.target);
-      });
-    },
-    {
-      threshold: 0.12,
-      rootMargin: "0px 0px -80px 0px",
-    }
-  );
+      }
+    });
+  },
+  {
+    rootMargin: "0px 0px -120px 0px",
+    threshold: 0.05,
+  }
+);
 
   elements.forEach((element) => observer.observe(element));
 }

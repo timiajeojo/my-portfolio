@@ -47,12 +47,11 @@ body {
 /* Hero Animations */
 /* ----------------------- */
 
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition:
-    opacity .8s ease,
-    transform .8s ease;
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+  transition: opacity 0.55s ease, transform 0.55s ease;
 }
 
 .reveal.show {
