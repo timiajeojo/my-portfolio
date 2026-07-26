@@ -14,8 +14,8 @@ export const portfolio = {
   headline: "I build fast, modern and responsive web experiences that users love.",
 
   description:
-    "I'm a Frontend Developer passionate about building modern, responsive, and accessible web applications. I specialize in React, Next.js, Astro, and Tailwind CSS, with hands-on experience integrating Firebase and Supabase for authentication, databases, and backend services. I'm currently expanding my expertise into backend development to build even more scalable web applications."
-},
+  "I'm a Frontend Developer passionate about building modern, responsive, and accessible web applications. I specialize in React, Next.js, Astro, and Tailwind CSS, with hands-on experience integrating Firebase and Supabase for authentication, databases, and backend services. I'm currently expanding my expertise into backend development to build even more scalable web applications.",
+
   resume: "/resume.pdf",
 
   socials: {
@@ -26,8 +26,8 @@ export const portfolio = {
   },
   about: {
   intro:
-    "I'm a Full Stack Developer passionate about building modern web applications with clean UI, great user experiences, and scalable architecture.",
-
+  "I'm a Frontend Developer passionate about building modern web applications with clean UI, great user experiences, and scalable architecture. I also have hands-on experience with Firebase and Supabase and I'm currently expanding into backend development.",
+  
   description:
     "I enjoy transforming ideas into production-ready products while focusing on performance, accessibility, and maintainable code.",
 
@@ -40,7 +40,7 @@ export const portfolio = {
 work: [
   {
     company: "Freelance",
-    role: "Full Stack Developer",
+    role: "Frontend Developer",
     period: "2024 - Present",
     description:
       "Building modern web applications for clients using React, Next.js, Astro, Tailwind CSS, Supabase and Firebase."
