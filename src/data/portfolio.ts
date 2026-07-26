@@ -1,16 +1,21 @@
 export const portfolio = {
   name: "Timi Ajeojo",
 
-  role: "Full Stack Developer",
+  availability: "Available for Frontend Developer Roles",
 
-  availability: "Available for Freelance",
+  roles: [
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Astro Developer",
+    "UI Developer"
+  ],
 
-  hero: {
-  heading: "Building digital experiences that inspire.",
+  headline: "I build fast, modern and responsive web experiences that users love.",
 
   description:
-    "I'm Timi Ajeojo, a Full Stack Developer passionate about crafting fast, scalable and beautiful web applications with modern technologies."
-     },
+    "I'm a Frontend Developer passionate about building modern, responsive, and accessible web applications. I specialize in React, Next.js, Astro, and Tailwind CSS, with hands-on experience integrating Firebase and Supabase for authentication, databases, and backend services. I'm currently expanding my expertise into backend development to build even more scalable web applications."
+},
   resume: "/resume.pdf",
 
   socials: {
