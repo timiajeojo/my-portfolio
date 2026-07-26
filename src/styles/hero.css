@@ -617,3 +617,36 @@ body {
   overflow-x: hidden;
   max-width: 100%;
 }
+.hero-enter {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroEnter 0.7s ease forwards;
+}
+
+.hero-enter.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.hero-enter.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.hero-enter.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.hero-enter.delay-4 {
+  animation-delay: 0.4s;
+}
+
+@keyframes heroEnter {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
