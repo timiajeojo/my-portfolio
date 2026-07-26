@@ -87,12 +87,18 @@ import { portfolio } from "../data/portfolio";
         </a>
 
         <a
-          href={portfolio.resume}
-          download
-          class="btn-secondary magnetic"
-        >
-          Download Résumé
-        </a>
+  href={portfolio.resume}
+  download
+  class="group inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-white transition-all duration-300 hover:text-indigo-400"
+>
+  <span class="border-b border-zinc-600 transition-colors duration-300 group-hover:border-indigo-400">
+    Résumé
+  </span>
+
+  <span class="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+    ↗
+  </span>
+</a>
 
       </div>
 
