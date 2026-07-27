@@ -22,8 +22,8 @@ exports.portfolio = {
     },
     about: {
         intro: "I'm a Frontend Developer passionate about building modern web applications with clean UI, great user experiences, and scalable architecture. I also have hands-on experience with Firebase and Supabase and I'm currently expanding into backend development.",
-        description: "I enjoy transforming ideas into production-ready products while focusing on performance, accessibility, and maintainable code.",
-        location: "Lagos, Nigeria",
+        description: "Creating beautiful, high-performance web applications with clean code and exceptional user experiences.",
+        location: "Nigeria",
         experience: "2+ Years",
         availability: "Freelance"
     },
