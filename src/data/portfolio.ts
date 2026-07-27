@@ -14,8 +14,8 @@ export const portfolio = {
   headline: "I build fast, modern and responsive web experiences that users love.",
 
   description:
-  "I'm a Frontend Developer passionate about building modern, responsive, and accessible web applications. I specialize in React, Next.js, Astro, and Tailwind CSS, with hands-on experience integrating Firebase and Supabase for authentication, databases, and backend services. I'm currently expanding my expertise into backend development to build even more scalable web applications.",
-
+  "Creating beautiful, high-performance web applications with clean code and exceptional user experiences."
+  
   resume: "/resume.pdf",
 
   socials: {
@@ -26,16 +26,19 @@ export const portfolio = {
   },
   about: {
   intro:
-  "I'm a Frontend Developer passionate about building modern web applications with clean UI, great user experiences, and scalable architecture. I also have hands-on experience with Firebase and Supabase and I'm currently expanding into backend development.",
-  
+ "Building thoughtful digital experiences with clean code and modern technologies."
+ 
   description:
-  "Creating beautiful, high-performance web applications with clean code and exceptional user experiences."
-  
+  `I'm Timi Ajeojo, a Frontend Developer passionate about building modern, responsive, and user-focused web applications. I enjoy turning ideas into intuitive digital experiences through clean code, thoughtful design, and attention to detail.
+My primary stack includes React, Next.js, Astro, Tailwind CSS, and TypeScript. I've also worked with Firebase and Supabase to build applications with authentication, databases, and real-time functionality, giving me experience beyond just the user interface.
+I believe great software is more than just writing code—it's about solving real problems, creating seamless user experiences, and building products that are both scalable and maintainable.
+As I continue growing as a developer, I'm expanding my expertise into backend development to build complete, end-to-end applications while maintaining my strong foundation in frontend engineering.`
+
   location: "Nigeria",
 
   experience: "2+ Years",
 
-  availability: "Freelance"
+  availability: "Freelance & Full time roles"
 },
 work: [
   {
