@@ -29,9 +29,9 @@ export const portfolio = {
  "Building thoughtful digital experiences with clean code and modern technologies."
  
  description: `
-I'm Timi Ajeojo, a Frontend Developer passionate about building modern, responsive, and user-focused web applications. I specialize in React, Next.js, Astro, Tailwind CSS, and TypeScript, creating clean, intuitive interfaces that deliver fast performance and exceptional user experiences. I've also worked with Firebase and Supabase to implement authentication, databases, and real-time features, giving me experience building applications beyond just the frontend.<br /><br />
+I'm Timi Ajeojo, a Frontend Developer passionate about building modern, responsive and user focused web applications. I specialize in React, Next.js, Astro, Tailwind CSS and TypeScript, creating clean, intuitive interfaces that deliver fast performance and exceptional user experiences. I've also worked with Firebase and Supabase to implement authentication, databases and real time features, giving me experience building applications beyond just the frontend.<br /><br />
 
-Throughout my journey, I've developed a range of real-world projects, including fintech platforms, cryptocurrency dashboards, marketplace applications, and business management systems. I'm committed to writing clean, maintainable code, solving meaningful problems, and continuously improving my craft. As I grow as a developer, I'm expanding into backend development to build complete, scalable end-to-end applications while maintaining a strong foundation in frontend engineering.
+Throughout my journey, I've developed a range of real world projects, including fintech platforms, cryptocurrency dashboards, marketplace applications and business management systems. I'm committed to writing clean, maintainable code, solving meaningful problems and continuously improving my craft. As I grow as a developer, I'm expanding into backend development to build complete, scalable end-to-end applications while maintaining a strong foundation in frontend engineering.
 `,
 
   location: "Nigeria",
@@ -55,8 +55,8 @@ work: [
     role: "Frontend Developer Intern",
     period: "July 2023 - January 2024",
     description:
-      `• Delivered pixel - perfect implementations using Nextjs and Tailwind, collaborating with designers to ensure visual consistency. <br />
-      • Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35%. <br />
+      `• Delivered pixel - perfect implementations using Nextjs and Tailwind, collaborating with designers to ensure visual consistency. <br /><br />
+      • Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35%. <br /><br />
       • Contributed to team projects using Git / GitHub, participated in PR reviews, resolved Jira tickets efficiently, and managed site deployments.`
   }
 ],
