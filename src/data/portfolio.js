@@ -22,7 +22,7 @@ exports.portfolio = {
     },
     about: {
         intro: "Building thoughtful digital experiences with clean code and modern technologies.",
-        description: "I'm Timi Ajeojo, a Frontend Developer passionate about building modern, responsive, and user-focused web applications. I enjoy turning ideas into intuitive digital experiences through clean code, thoughtful design, and attention to detail.\n  \nMy primary stack includes React, Next.js, Astro, Tailwind CSS, and TypeScript. I've also worked with Firebase and Supabase to build applications with authentication, databases, and real-time functionality, giving me experience beyond just the user interface.\n\nI believe great software is more than just writing code\u2014it's about solving real problems, creating seamless user experiences, and building products that are both scalable and maintainable.\n\nAs I continue growing as a developer, I'm expanding my expertise into backend development to build complete, end-to-end applications while maintaining my strong foundation in frontend engineering.",
+        description: "I'm a Frontend Developer passionate about building modern web applications.<br /><br />\n           I specialize in React, Next.js, Astro and Tailwind CSS.<br /><br />\n            I'm currently expanding into backend development.",
         location: "Nigeria",
         experience: "2+ Years",
         availability: "Freelance & Full time roles"
@@ -32,13 +32,13 @@ exports.portfolio = {
             company: "Thrift Africa",
             role: "Frontend Developer Intern",
             period: "February 2023 - July 2023",
-            description: "Contributed to the development of responsive web pages utilizing Nextjs, TailwindCSS, and wordpress, resulting in a measured 30 % reduction in page load time.\n      \n      Implemented over 20 reusable React components, significantly decreasing development time by an estimated 20 %. \n      \n      Shipped 3+ new features, enhancing platform experience. Enhanced collaboration with structured pull requests and clear documentation."
+            description: "Contributed to the development of responsive web pages utilizing Nextjs, TailwindCSS, and wordpress, resulting in a measured 30 % reduction in page load time. <br /><br />\n      Implemented over 20 reusable React components, significantly decreasing development time by an estimated 20 %. <br /><br />\n      Shipped 3+ new features, enhancing platform experience. Enhanced collaboration with structured pull requests and clear documentation."
         },
         {
             company: "Crickle Labs",
             role: "Frontend Developer Intern",
             period: "July 2023 - January 2024",
-            description: "Delivered pixel - perfect implementations using Nextjs and Tailwind, collaborating with designers to ensure visual consistency.\n      \n      Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35 %\n      \n      Contributed to team projects using Git / GitHub, participated in PR reviews, resolved Jira tickets efficiently, and managed site deployments."
+            description: "Delivered pixel - perfect implementations using Nextjs and Tailwind, collaborating with designers to ensure visual consistency. <br /><br />\n      Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35%. <br /><br />\n      Contributed to team projects using Git / GitHub, participated in PR reviews, resolved Jira tickets efficiently, and managed site deployments."
         }
     ],
     stack: {
