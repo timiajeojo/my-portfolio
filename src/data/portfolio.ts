@@ -57,8 +57,9 @@ work: [
     description:
       `• Delivered pixel - perfect implementations using Nextjs and Tailwind, collaborating with designers to ensure visual consistency. <br /><br />
       • Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35%. <br /><br />
-      • Contributed to team projects using Git / GitHub, participated in PR reviews, resolved Jira tickets efficiently, and managed site deployments.`
-  }
+      • Contributed to team projects using Git / GitHub, participated in PR reviews, resolved Jira tickets efficiently, and managed site deployments.
+      `,
+  
 ],
 stack: {
   frontend: [

@@ -38,7 +38,7 @@ exports.portfolio = {
             company: "Crickle Labs",
             role: "Frontend Developer Intern",
             period: "July 2023 - January 2024",
-            description: "\u2022 Delivered pixel - perfect implementations using Nextjs and Tailwind, collaborating with designers to ensure visual consistency. <br /><br />\n      \u2022 Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35%. <br /><br />\n      \u2022 Contributed to team projects using Git / GitHub, participated in PR reviews, resolved Jira tickets efficiently, and managed site deployments."
+            description: "\u2022 Delivered pixel - perfect implementations using Nextjs and Tailwind, collaborating with designers to ensure visual consistency. <br /><br />\n      \u2022 Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35%. <br /><br />\n      \u2022 Contributed to team projects using Git / GitHub, participated in PR reviews, resolved Jira tickets efficiently, and managed site deployments.\n      ",
         }
     ],
     stack: {
