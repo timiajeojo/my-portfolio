@@ -43,18 +43,20 @@ work: [
     company: "Thrift Africa",
     role: "Frontend Developer Intern",
     period: "February 2023 - July 2023",
-    description:
-      `Contributed to the development of responsive web pages utilizing Nextjs, TailwindCSS, and wordpress, resulting in a measured 30 % reduction in page load time. <br /><br />
-      Implemented over 20 reusable React components, significantly decreasing development time by an estimated 20 %. <br /><br />
-      Shipped 3+ new features, enhancing platform experience. Enhanced collaboration with structured pull requests and clear documentation.`
-      },
+    description: `
+Contributed to the development of responsive web pages utilizing Next.js, Tailwind CSS, and WordPress, resulting in a 30% reduction in page load time.<br /><br />
+
+Implemented over 20 reusable React components, significantly decreasing development time by an estimated 20%.<br /><br />
+
+Shipped 3+ new features, enhancing the platform experience while improving collaboration through structured pull requests and clear documentation.
+`,
   {
     company: "Crickle Labs",
     role: "Frontend Developer Intern",
     period: "July 2023 - January 2024",
     description:
-      `Delivered pixel - perfect implementations using Nextjs and Tailwind, collaborating with designers to ensure visual consistency. <br /><br />
-      Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35%. <br /><br />
+      `Delivered pixel - perfect implementations using Nextjs and Tailwind, collaborating with designers to ensure visual consistency. <br />
+      Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35%. <br />
       Contributed to team projects using Git / GitHub, participated in PR reviews, resolved Jira tickets efficiently, and managed site deployments.`
   }
 ],
