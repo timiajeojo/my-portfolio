@@ -45,9 +45,10 @@ import { portfolio } from "../data/portfolio";
               {job.company}
             </p>
 
-            <p class="mt-5 max-w-2xl leading-8 text-zinc-400">
-              {job.description}
-            </p>
+            <p
+            class="text-zinc-400 leading-8"
+           set:html={job.description}
+/>
 
           </div>
         ))
