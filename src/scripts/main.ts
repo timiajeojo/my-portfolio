@@ -59,7 +59,7 @@ function initReveal() {
   },
   {
     rootMargin: "0px 0px -120px 0px",
-    threshold: 0.05,
+    threshold: 0,
   }
 );
 
