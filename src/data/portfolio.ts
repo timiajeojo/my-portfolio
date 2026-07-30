@@ -88,7 +88,7 @@ stack: {
 projects: [
   {
     title: "SolanaCoins",
-    image: "/images/projects/caresync.png",
+    image: "/images/projects/solana.png",
     description:
       "A fully functional cryptocurrency platform built with Next.js, TypeScript, Tailwind CSS, and Supabase. The application provides live cryptocurrency market prices, secure user authentication, real-time deposits, transaction history, and withdrawal functionality, delivering a seamless and responsive experience with a modern, intuitive interface.",
     technologies: [
@@ -103,7 +103,7 @@ projects: [
 
   {
     title: "StacksNumber",
-    image: "/images/projects/chat-with-pdf.png",
+    image: "/images/projects/stacks.png",
     description:
       "A full-stack virtual number marketplace built with modern web technologies, allowing users to purchase or rent virtual phone numbers for online verification. The platform features secure authentication, wallet deposits, real-time balance management, order tracking, and a seamless marketplace experience, delivering a fast, responsive, and production-ready application.",
     technologies: [
@@ -118,7 +118,7 @@ projects: [
 
   {
     title: "River Send",
-    image: "/images/projects/segment.png",
+    image: "/images/projects/river.png",
     description:
       "A modern money transfer platform designed for fast and secure international payments. Built with a clean, responsive interface, the application allows users to send money across borders, manage recipients, track transactions in real time, and enjoy a seamless payment experience across desktop and mobile devices. The project focuses on usability, performance, and creating a smooth financial experience.",
     technologies: [
