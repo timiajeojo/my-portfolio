@@ -8,87 +8,92 @@ export const portfolio = {
     "React Developer",
     "Next.js Developer",
     "Astro Developer",
-    "UI Developer"
+    "UI Developer",
   ],
 
-  headline: "I build fast, modern and responsive web experiences that users love.",
+  headline:
+    "I build fast, modern and responsive web experiences that users love.",
 
   description:
-  "Creating beautiful, high-performance web applications with clean code and exceptional user experiences.",
-  
+    "Creating beautiful, high-performance web applications with clean code and exceptional user experiences.",
+
   resume: "/resume.pdf",
 
   socials: {
     github: "https://github.com/timiajeojo",
     linkedin: "",
     twitter: "https://x.com/devtimii",
-    email: "timiajeojo@gmail.com"
+    email: "timiajeojo@gmail.com",
   },
+
   about: {
-  intro:
- "Building thoughtful digital experiences with clean code and modern technologies."
- 
- description: `
+    intro:
+      "Building thoughtful digital experiences with clean code and modern technologies.",
+
+    description: `
 I'm Timi Ajeojo, a Frontend Developer passionate about building modern, responsive and user focused web applications. I specialize in React, Next.js, Astro, Tailwind CSS and TypeScript, creating clean, intuitive interfaces that deliver fast performance and exceptional user experiences. I've also worked with Firebase and Supabase to implement authentication, databases and real time features, giving me experience building applications beyond just the frontend.<br /><br />
 
 Throughout my journey, I've developed a range of real world projects, including fintech platforms, cryptocurrency dashboards, marketplace applications and business management systems. I'm committed to writing clean, maintainable code, solving meaningful problems and continuously improving my craft. As I grow as a developer, I'm expanding into backend development to build complete, scalable end-to-end applications while maintaining a strong foundation in frontend engineering.
 `,
 
-  location: "Nigeria",
+    location: "Nigeria",
 
-  experience: "2+ Years",
+    experience: "2+ Years",
 
-  availability: "Freelance & Full time roles"
-},
-work: [
-  {
-    company: "Thrift Africa",
-    role: "Frontend Developer Intern",
-    period: "February 2023 - July 2023",
-    description: `
+    availability: "Freelance & Full time roles",
+  },
+
+  work: [
+    {
+      company: "Thrift Africa",
+      role: "Frontend Developer Intern",
+      period: "February 2023 - July 2023",
+      description: `
 • Contributed to the development of responsive web pages utilizing Next.js, Tailwind CSS, and WordPress, resulting in a 30% reduction in page load time.<br /><br />
 • Implemented over 20 reusable React components, significantly decreasing development time by an estimated 20%.<br /><br />
 • Shipped 3+ new features, enhancing the platform experience while improving collaboration through structured pull requests and clear documentation.
 `,
-  {
-    company: "Crickle Labs",
-    role: "Frontend Developer Intern",
-    period: "July 2023 - January 2024",
-    description:
-      `• Delivered pixel - perfect implementations using Nextjs and Tailwind, collaborating with designers to ensure visual consistency. <br /><br />
-      • Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35%. <br /><br />
-      • Contributed to team projects using Git / GitHub, participated in PR reviews, resolved Jira tickets efficiently, and managed site deployments.
-      `,
-  
-],
-stack: {
-  frontend: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Astro",
-    "Tailwind CSS"
+    },
+
+    {
+      company: "Crickle Labs",
+      role: "Frontend Developer Intern",
+      period: "July 2023 - January 2024",
+      description: `
+• Delivered pixel-perfect implementations using Next.js and Tailwind, collaborating with designers to ensure visual consistency.<br /><br />
+• Optimized application performance using memoization, lazy loading, and asset optimization techniques that improved load times by 35%.<br /><br />
+• Contributed to team projects using Git/GitHub, participated in PR reviews, resolved Jira tickets efficiently, and managed site deployments.
+`,
+    },
   ],
 
-  backend & data: [
-    "Supabase",
-    "Firebase",
-    "Neon",
-    "Prisma",
-    "PostgreSQL"
-  ],
-  
+  stack: {
+    frontend: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Astro",
+      "Tailwind CSS",
+    ],
 
-  tools: [
-    "Git",
-    "GitHub",
-    "Vercel",
-    "Figma"
-  ]
-},
+    "backend & data": [
+      "Supabase",
+      "Firebase",
+      "Neon",
+      "Prisma",
+      "PostgreSQL",
+    ],
+
+    tools: [
+      "Git",
+      "GitHub",
+      "Vercel",
+      "Figma",
+    ],
+  },
 projects: [
   {
     title: "SolanaCoins",
