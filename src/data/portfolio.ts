@@ -38,7 +38,7 @@ Throughout my journey, I've developed a range of real world projects, including 
 
     location: "Nigeria",
 
-    experience: "2+ Years",
+    experience: "3+ Years",
 
     availability: "Freelance & Full time roles",
   },

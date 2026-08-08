@@ -24,7 +24,7 @@ exports.portfolio = {
         intro: "Building thoughtful digital experiences with clean code and modern technologies.",
         description: "\nI'm Timi Ajeojo, a Frontend Developer passionate about building modern, responsive and user focused web applications. I specialize in React, Next.js, Astro, Tailwind CSS and TypeScript, creating clean, intuitive interfaces that deliver fast performance and exceptional user experiences. I've also worked with Firebase and Supabase to implement authentication, databases and real time features, giving me experience building applications beyond just the frontend.<br /><br />\n\nThroughout my journey, I've developed a range of real world projects, including fintech platforms, cryptocurrency dashboards, marketplace applications and business management systems. I'm committed to writing clean, maintainable code, solving meaningful problems and continuously improving my craft. As I grow as a developer, I'm expanding into backend development to build complete, scalable end-to-end applications while maintaining a strong foundation in frontend engineering.\n",
         location: "Nigeria",
-        experience: "2+ Years",
+        experience: "3+ Years",
         availability: "Freelance & Full time roles",
     },
     work: [
