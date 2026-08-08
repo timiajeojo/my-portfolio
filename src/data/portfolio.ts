@@ -14,7 +14,7 @@ export const portfolio = {
   headline: "I build fast, modern and responsive web experiences that users love.",
 
   description:
-  "Creating beautiful, high-performance web applications with clean code and exceptional user experiences."
+  "Creating beautiful, high-performance web applications with clean code and exceptional user experiences.",
   
   resume: "/resume.pdf",
 
