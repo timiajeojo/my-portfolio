@@ -73,10 +73,14 @@ stack: {
     "Tailwind CSS"
   ],
 
-  backend: [
+  backend & data: [
+    "Supabase",
     "Firebase",
-    "Supabase"
+    "Neon",
+    "Prisma",
+    "PostgreSQL"
   ],
+  
 
   tools: [
     "Git",
